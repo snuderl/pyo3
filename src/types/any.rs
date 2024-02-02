@@ -73,7 +73,8 @@ impl PyAny {
     /// This is equivalent to the Python expression `self is other`.
     #[inline]
     pub fn is<T: AsPyPointer>(&self, other: &T) -> bool {
-        self.as_borrowed().is(other)
+        //self.as_borrowed().is(other)
+        todo!()
     }
 
     /// Determines whether this object has the given attribute.
